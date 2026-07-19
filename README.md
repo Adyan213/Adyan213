@@ -1,68 +1,64 @@
 # Hi, I'm Adyan Mukadam 👋
 
-I'm a Computer Science student at Pillai College of Engineering (University of Mumbai) specializing in **biomedical machine learning**. I build clinical predictive models and medical imaging pipelines, with credentialed access to restricted clinical databases including MIMIC-IV.
+I'm a Computer Science student at Pillai College of Engineering (University of Mumbai) specializing in **Biomedical Machine Learning and Clinical Data Science**. I build robust, interpretable clinical predictive models and medical imaging pipelines, backed by credentialed access to restricted clinical databases like MIMIC-IV. 
 
-Currently building toward graduate school applications in biomedical ML and medical data science.
-
----
-
-## 🛠️ Tech Stack
-
-- **Languages:** Python, SQL, JavaScript (ES6+), C
-- **ML & Deep Learning:** PyTorch, Scikit-Learn, XGBoost, SHAP, TensorFlow
-- **Medical Imaging:** torchvision, OpenCV, Grad-CAM
-- **Data:** Pandas, NumPy, Google BigQuery, SQLite
-- **Tools:** Git, GitHub, Jupyter, Streamlit, Kaggle
+Currently building toward graduate school opportunities in Biomedical ML, Health Informatics, and Medical AI.
 
 ---
 
-## 🩺 Biomedical ML Projects
+### 🛠️ Tech Stack
 
-### Chest X-Ray Pneumonia Classification
-- Binary classification of chest X-rays (Normal vs Pneumonia) using PyTorch
-- Baseline CNN from scratch + DenseNet121 transfer learning
-- From-scratch Grad-CAM implementation for clinical interpretability
-- AUC-ROC: 0.941 | Macro F1: 0.87
-- 📁 [Repository](https://github.com/Adyan213/Chest-X-Ray-Pneumonia-Classification)
-
-### MIMIC-IV ICU Mortality Prediction
-- In-hospital mortality prediction using real restricted-access clinical data
-- Features extracted via SQL on Google BigQuery joining 8 clinical tables
-- XGBoost + SHAP analysis with clinical interpretation
-- AUC-ROC: 0.918 | Credentialed PhysioNet access
-- 📁 [Repository](https://github.com/Adyan213/mimic-iv-mortality-prediction)
-
-### WiDS Datathon 2020 ICU Mortality Prediction
-- Mortality prediction on 91,713 ICU patient records
-- Logistic Regression baseline + XGBoost with SHAP
-- Consistent finding: removing pre-computed severity scores does not degrade performance
-- AUC-ROC: 0.900 | Macro F1: 0.71
-- 📁 [Repository](https://github.com/Adyan213/WiDS-Datathon-2020-Mortality-Prediction)
+*   **Languages:** Python, SQL, JavaScript (ES6+), C
+*   **ML & Deep Learning:** PyTorch, Scikit-Learn, XGBoost, TensorFlow, SHAP, torchvision
+*   **Medical Imaging & Vision:** OpenCV, Grad-CAM (Interpretability Frameworks)
+*   **Data & Infrastructure:** Google BigQuery, SQLite, Pandas, NumPy, Git/GitHub
 
 ---
 
-## 🚀 Other Projects
+### 🩺 Biomedical Machine Learning Projects
 
-### FIFA World Cup 2026 Predictive Oracle
-- Dual-engine classification core (XGBoost + Deep NN)
-- 1,000x Monte Carlo simulation for championship probability distributions
-- 🔗 [Live App](https://fifa-world-cup-2026-predictor-mtu3qnzrb2wgk3nbecwwko.streamlit.app/) | 📁 [Repository](https://github.com/Adyan213/FIFA-World-Cup-2026-Predictor)
+#### **MIMIC-IV ICU Mortality Prediction**
+*   **Overview:** Developed an in-hospital mortality prediction pipeline using real-world, restricted-access electronic health records (EHR).
+*   **Engineering:** Built complex data extraction pipelines via SQL on Google BigQuery, joining 8+ relational clinical tables to aggregate patient vitals, labs, and demographics.
+*   **Modeling & Interpretability:** Evaluated XGBoost models optimized with SHAP framework to provide feature-level clinical explanations for ICU mortality risk.
+*   **Metrics:** **AUC-ROC: 0.918** | *Credentialed PhysioNet Access*
+*   [📁 Repository](https://github.com/Adyan213/mimic-iv-mortality-prediction)
 
-### Dynamic Diabetes Detection System
-- End-to-end classification pipeline with Streamlit interface
-- 📁 [Repository](https://github.com/Adyan213/Diabetes-Detection)
+#### **Chest X-Ray Pneumonia Classification**
+*   **Overview:** End-to-end deep learning pipeline for binary classification of chest radiographs (Normal vs. Pneumonia).
+*   **Architecture:** Benchmarked a custom CNN architecture against a DenseNet121 transfer learning pipeline in PyTorch.
+*   **Clinical Interpretability:** Implemented a from-scratch Grad-CAM localization layer to map model activations directly onto anatomical regions, providing visual verification for clinicians.
+*   **Metrics:** **AUC-ROC: 0.941** | **Macro F1: 0.87**
+*   [📁 Repository](https://github.com/Adyan213/Chest-X-Ray-Pneumonia-Classification)
 
-### Indian Food Nutrition Analysis
-- Custom data ingestion pipeline with SQLite and interactive Streamlit dashboard
-- 📁 [Repository](https://github.com/Adyan213/Indian-Food-Nutrition-Analysis)
-
-### GeneLife — Algorithmic Medical Report Generator
-- Client-side rule-engine for personalized preventative health risk reports
-- 📁 [Repository](https://github.com/Adyan213/GeneLife)
+#### **WiDS Datathon ICU Mortality Prediction**
+*   **Overview:** Predictive modeling on a large-scale dataset of 91,713 ICU patient records to analyze feature dependency.
+*   **Key Insight:** Proved through iterative baseline comparisons (Logistic Regression vs. XGBoost) that removing pre-computed clinical severity scores did not degrade model performance, highlighting the robustness of raw physiological features.
+*   **Metrics:** **AUC-ROC: 0.900** | **Macro F1: 0.71**
+*   [📁 Repository](https://github.com/Adyan213/WiDS-Datathon-2020-Mortality-Prediction)
 
 ---
 
-## 📬 Connect
+### 🚀 Data Engineering & Core Software Projects
 
-- **LinkedIn:** https://www.linkedin.com/in/adyan-mukadam-44011a375/
-- **GitHub:** https://github.com/Adyan213
+#### **Indian Food Nutrition Analysis Dashboard**
+*   **Tech:** Python, Streamlit, SQLite
+*    Engineered a custom data ingestion pipeline to parse, clean, and migrate nutritional datasets from CSV into a structured SQLite database. Built an interactive Streamlit application to track daily nutritional targets.
+*   [📁 Repository](https://github.com/Adyan213/Indian-Food-Nutrition-Analysis)
+
+#### **FIFA World Cup 2026 Simulation Framework**
+*   **Tech:** XGBoost, Deep NN, Python
+*   Developed a dual-engine classification core featuring a 1,000x Monte Carlo simulation loop to evaluate performance distributions and outcomes post-tournament.
+*   [🔗 Live App](https://fifa-world-cup-2026-predictor-mtu3qnzrb2wgk3nbecwwko.streamlit.app/) | [📁 Repository](https://github.com/Adyan213/FIFA-World-Cup-2026-Predictor)
+
+#### **GeneLife — Algorithmic Medical Report Generator**
+*   **Tech:** JavaScript (ES6+)
+*   Built a lightweight, client-side rule-engine designed to parse user metrics and dynamically generate personalized preventative health risk assessments.
+*   [📁 Repository](https://github.com/Adyan213/GeneLife)
+
+---
+
+### 📬 Connect with Me
+
+*   **LinkedIn:** [adyan-mukadam](https://www.linkedin.com/in/adyan-mukadam-44011a375/)
+*   **GitHub:** [Adyan213](https://github.com/Adyan213)
