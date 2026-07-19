@@ -1,44 +1,68 @@
-# Hi, I'm Adyan Sakib Mukadam 👋
+# Hi, I'm Adyan Mukadam 👋
 
-I am a Computer Science student and an aspiring Data Scientist and Machine Learning Engineer. I specialize in building predictive systems, deep learning architectures, scalable data pipelines, and interactive data applications.
+I'm a Computer Science student at Pillai College of Engineering (University of Mumbai) specializing in **biomedical machine learning**. I build clinical predictive models and medical imaging pipelines, with credentialed access to restricted clinical databases including MIMIC-IV.
 
-## 🛠️ Tech Stack & Tooling
-* **Languages:** Python, JavaScript (ES6+), SQL, C (C89/C90)
-* **Frameworks & ML Libraries:** Scikit-Learn, XGBoost, TensorFlow, Keras, Streamlit
-* **Data Processing & Analytics:** Pandas, NumPy, SQLite, Data Ingestion / ETL
-* **Developer Ecosystem:** Git, GitHub, Jupyter Notebooks
+Currently building toward graduate school applications in biomedical ML and medical data science.
 
 ---
 
-## 🚀 Featured Production Projects
+## 🛠️ Tech Stack
 
-### 🔮 FIFA World Cup 2026 Predictive Oracle & Bracket Simulator
-* **Core Tech:** Python, Streamlit, XGBoost, TensorFlow, Pandas, NumPy
-* **Architecture:** Developed a dual-engine classification core (XGBoost + Sequential Deep NN). Solved time-series data leakage by engineering chronological rolling window features (`form` and `class` metrics).
-* **Simulation Engine:** Implemented a **1,000x Stochastic Monte Carlo simulation loop** on the cloud to smooth out single-elimination tournament volatility and compute exact championship probability distributions.
-* 🔗 [Live Web Application](https://fifa-world-cup-2026-predictor-mtu3qnzrb2wgk3nbecwwko.streamlit.app/) | 📁 [Source Code Repo](https://github.com/Adyan213/FIFA-World-Cup-2026-Predictor)
-
-### 🩺 Dynamic Diabetes Detection System
-* **Core Tech:** Python, Scikit-Learn, Pandas, NumPy, Streamlit
-* **Architecture:** Formulated an end-to-end classification pipeline to assess and map clinical risk profiles. Integrated a clean user interface to process patient vitals, handle baseline feature scaling, and serve instant model predictions.
-* 📁 [Source Code Repo](https://github.com/Adyan213/Diabetes-Detection)
+- **Languages:** Python, SQL, JavaScript (ES6+), C
+- **ML & Deep Learning:** PyTorch, Scikit-Learn, XGBoost, SHAP, TensorFlow
+- **Medical Imaging:** torchvision, OpenCV, Grad-CAM
+- **Data:** Pandas, NumPy, Google BigQuery, SQLite
+- **Tools:** Git, GitHub, Jupyter, Streamlit, Kaggle
 
 ---
 
-## 📊 Academic & Specialized Projects
+## 🩺 Biomedical ML Projects
 
-### 🥗 Indian Food Nutrition Analysis & Visualization
-* **Core Tech:** Streamlit, Python, SQLite, Pandas, Plotly/Matplotlib
-* **Architecture:** Engineered a custom data ingestion pipeline to parse, clean, and migrate structured food nutrition CSV data into an SQLite relational database. Built an interactive Streamlit dashboard featuring multi-dimensional nutrient distribution visualizations.
-* 📁 [Source Code Repo](https://github.com/Adyan213/Indian-Food-Nutrition-Analysis)
+### Chest X-Ray Pneumonia Classification
+- Binary classification of chest X-rays (Normal vs Pneumonia) using PyTorch
+- Baseline CNN from scratch + DenseNet121 transfer learning
+- From-scratch Grad-CAM implementation for clinical interpretability
+- AUC-ROC: 0.941 | Macro F1: 0.87
+- 📁 [Repository](https://github.com/Adyan213/Chest-X-Ray-Pneumonia-Classification)
 
-### 🧬 Algorithmic Medical Report Generator Quiz
-* **Core Tech:** Pure JavaScript, HTML5, CSS3
-* **Architecture:** Developed a standalone client-side web application driven by a custom-built rule-engine algorithm. The scoring system dynamically parses a user's multi-variant genetic and lifestyle input data on the fly to generate structured, personalized preventative health risk reports.
-* 📁 [Source Code Repo](https://github.com/Adyan213/GeneLife)
+### MIMIC-IV ICU Mortality Prediction
+- In-hospital mortality prediction using real restricted-access clinical data
+- Features extracted via SQL on Google BigQuery joining 8 clinical tables
+- XGBoost + SHAP analysis with clinical interpretation
+- AUC-ROC: 0.918 | Credentialed PhysioNet access
+- 📁 [Repository](https://github.com/Adyan213/mimic-iv-mortality-prediction)
+
+### WiDS Datathon 2020 ICU Mortality Prediction
+- Mortality prediction on 91,713 ICU patient records
+- Logistic Regression baseline + XGBoost with SHAP
+- Consistent finding: removing pre-computed severity scores does not degrade performance
+- AUC-ROC: 0.900 | Macro F1: 0.71
+- 📁 [Repository](https://github.com/Adyan213/WiDS-Datathon-2020-Mortality-Prediction)
 
 ---
 
-## 📬 Let's Connect!
-* **LinkedIn:** https://www.linkedin.com/in/adyan-mukadam-44011a375/
-* **GitHub:** https://github.com/Adyan213
+## 🚀 Other Projects
+
+### FIFA World Cup 2026 Predictive Oracle
+- Dual-engine classification core (XGBoost + Deep NN)
+- 1,000x Monte Carlo simulation for championship probability distributions
+- 🔗 [Live App](https://fifa-world-cup-2026-predictor-mtu3qnzrb2wgk3nbecwwko.streamlit.app/) | 📁 [Repository](https://github.com/Adyan213/FIFA-World-Cup-2026-Predictor)
+
+### Dynamic Diabetes Detection System
+- End-to-end classification pipeline with Streamlit interface
+- 📁 [Repository](https://github.com/Adyan213/Diabetes-Detection)
+
+### Indian Food Nutrition Analysis
+- Custom data ingestion pipeline with SQLite and interactive Streamlit dashboard
+- 📁 [Repository](https://github.com/Adyan213/Indian-Food-Nutrition-Analysis)
+
+### GeneLife — Algorithmic Medical Report Generator
+- Client-side rule-engine for personalized preventative health risk reports
+- 📁 [Repository](https://github.com/Adyan213/GeneLife)
+
+---
+
+## 📬 Connect
+
+- **LinkedIn:** https://www.linkedin.com/in/adyan-mukadam-44011a375/
+- **GitHub:** https://github.com/Adyan213
