@@ -1,6 +1,6 @@
 # Hi, I'm Adyan Mukadam 👋
 
-I'm a Computer Science student at Pillai College of Engineering (University of Mumbai) specializing in **Biomedical Machine Learning and Clinical Data Science**. I build robust, interpretable clinical predictive models and medical imaging pipelines, backed by credentialed access to restricted clinical databases like MIMIC-IV. 
+I'm a Computer Science student at Pillai College of Engineering specializing in Biomedical Machine Learning, Medical Imaging AI, and Clinical Data Science. My work spans clinical risk prediction and medical image analysis using real-world healthcare datasets, including MIMIC-IV electronic health records and NIH ChestX-ray14 radiographs. I focus on building interpretable AI systems that combine strong predictive performance with clinically meaningful explanations through techniques such as SHAP and Grad-CAM.
 
 Currently building toward graduate school opportunities in Biomedical ML, Health Informatics, and Medical AI.
 
@@ -16,6 +16,15 @@ Currently building toward graduate school opportunities in Biomedical ML, Health
 ---
 
 ### 🩺 Biomedical Machine Learning Projects
+
+#### ChestX-ray14 Multi-Label Disease Classification
+
+- **Overview:** Built an interpretable deep learning pipeline for automated thoracic disease detection using the NIH ChestX-ray14 dataset (112,120 chest radiographs, 14 disease labels).
+- **Architecture:** Fine-tuned an ImageNet-pretrained DenseNet121 with staged transfer learning (frozen backbone → differential learning rates → full fine-tuning).
+- **Clinical Interpretability:** Implemented Grad-CAM from scratch to visualize disease-specific attention maps and investigate failure cases, false positives, and false negatives.
+- **Research Contribution:** Conducted an ablation study on class imbalance mitigation using weighted BCE loss and showed that performance bottlenecks for Pneumonia and Infiltration are driven more by visual ambiguity than label frequency.
+- **Metrics:** **Macro AUROC: 0.788** across 14 thoracic disease classes on the official NIH test split.
+- [📁 Repository](https://github.com/Adyan213/Chest-X-Ray14-Classification)
 
 #### **MIMIC-IV ICU Mortality Prediction**
 *   **Overview:** Developed an in-hospital mortality prediction pipeline using real-world, restricted-access electronic health records (EHR).
